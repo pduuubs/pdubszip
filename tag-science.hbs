@@ -1,0 +1,178 @@
+<!--
+
+                 /$$           /$$
+                | $$          | $$
+  /$$$$$$   /$$$$$$$ /$$   /$$| $$$$$$$   /$$$$$$$
+ /$$__  $$ /$$__  $$| $$  | $$| $$__  $$ /$$_____/
+| $$  \ $$| $$  | $$| $$  | $$| $$  \ $$|  $$$$$$
+| $$  | $$| $$  | $$| $$  | $$| $$  | $$ \____  $$
+| $$$$$$$/|  $$$$$$$|  $$$$$$/| $$$$$$$/ /$$$$$$$/
+| $$____/  \_______/ \______/ |_______/ |_______/
+| $$
+| $$       pdubs.xyz - Paul Planchon (c) 2017
+|__/
+
+-->
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="My passion, the thing I learn all in this website, in one word, my world.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	<title>{{@blog.title}}</title>
+
+	<!--Chrome et Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="https://pdubs.xyz/images/android-desktop.png">
+	<meta name="theme-color" content="#120838">
+
+	<!-- Safari et IOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="The world of pdubs">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://pdubs.xyz/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://pdubs.xyz/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://pdubs.xyz/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://pdubs.xyz/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://pdubs.xyz/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://pdubs.xyz/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://pdubs.xyz/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://pdubs.xyz/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://pdubs.xyz/favicon/apple-icon-180x180.png">
+
+	<!-- Win8 -->
+	<meta name="msapplication-TileImage" content="https://pdubs.xyz/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#120838">
+	<meta name="msapplication-TileColor" content="#120838">
+
+
+	<!-- Favicon general -->
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://pdubs.xyz/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://pdubs.xyz/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://pdubs.xyz/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://pdubs.xyz/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://pdubs.xyz/favicon/manifest.json">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://pdubs.xyz/style/font.css">
+	<link rel="stylesheet" href="https://pdubs.xyz/style/icons.css">
+	<link rel="stylesheet" href="https://pdubs.xyz/style/material.css">
+	<link rel="stylesheet" href="https://pdubs.xyz/style/main.css">
+
+	<!-- Mathjax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+	<style>
+	#view-source {
+		position: fixed;
+		display: block;
+		right: 0;
+		bottom: 0;
+		margin-right: 40px;
+		margin-bottom: 40px;
+		z-index: 900;
+	}
+
+	.mdl-color--primary-modified {
+		background: url('https://pdubs.xyz/assets/images/background.png');
+		background-size: contain;
+	}
+
+	.mdl-color--primary-dark-modified {
+		background-color: rgba(81, 45, 168, 0) !important;
+	}
+
+	.head-font {
+		font-family: "Roboto Mono", Roboto, sans-serif;
+		font-weight: 400;
+		text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+	}
+
+	.demo-card-wide.mdl-card {
+		width: 1028px;
+	}
+	.demo-card-wide > .mdl-card__title {
+		color: #fff;
+		height: 176px;
+		background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+	}
+	.demo-card-wide > .mdl-card__menu {
+		color: #fff;
+	}
+	</style>
+
+	{{ghost_head}}
+
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base test">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary-modified">
+			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+			</div>
+			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+				<h3 class="head-font">{{@blog.title}}</h3>
+			</div>
+			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+			</div>
+			{{navigation}}
+		</header>
+
+		<main class="mdl-layout__content">
+			<div class="mdl-layout__tab-panel is-active" id="overview">
+
+				{{#foreach posts limit="5"}}
+				{{#has tag="Science"}}
+
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text">
+
+							<h4>{{title}}:</h4>{{excerpt words="50"}}...
+
+							<!--	<h4>Articles :</h4> Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in.
+							Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.-->
+						</div>
+						<div class="mdl-card__actions">
+							<a href="{{url}}" class="mdl-button">Lire l'article...</a>
+						</div>
+					</div>
+
+				</section>
+				{{/has}}
+				{{/foreach}}
+				{{pagination}}
+				<!-- obligatoire pour ne pas avoir de bugs avec les boutons -->
+
+				<section class="mdl--footer center"></section>
+			</div>
+
+			<footer class="mdl-mini-footer">
+				<div class="mdl-mini-footer__left-section">
+					<div class="mdl-logo">
+						{{@blog.title}} &copy; 	{{date format="YYYY"}}
+					</div>
+				</div>
+			</footer>
+		</main>
+	</div>
+	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-92100384-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

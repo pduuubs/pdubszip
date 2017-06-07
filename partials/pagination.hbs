@@ -1,0 +1,9 @@
+<div style="text-align: center;    margin-bottom:30px;">
+  {{#if prev}}
+  <a href="{{page_url prev}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">← Newer</a>
+  {{/if}}
+   -  {{page}} / {{pages}}  -
+   {{#if next}}
+  <a href="{{page_url next}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Older →</a>
+  {{/if}}
+</div>
